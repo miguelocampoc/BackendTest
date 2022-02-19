@@ -7,4 +7,4 @@ Entrar a la ruta del proyecto en la consola de comandos y ejecutar los siguiente
 
 Nota: Es necesario tener composer instalado
 
-Una vez finalizado los pasos anteriores, el servidor ya esta funcionando 
+Una vez finalizado los pasos anteriores, el servidor ya deberia esta funcionando 
