@@ -41,15 +41,7 @@ class PrestamoSeeder extends Seeder
              'fa'=> date('d-m-Y h:i:s '),
 
         ]);
-        Prestamo::create([
-            'id' => '4',
-             'user_id'=>'4',
-             'libro_id'=>'4',
-             'expiracion'=>  date('d-m-Y h:i:s '),
-             'fi'=> date('d-m-Y h:i:s '),
-             'fa'=> date('d-m-Y h:i:s '),
-
-        ]);
+    
        
     }
 }
