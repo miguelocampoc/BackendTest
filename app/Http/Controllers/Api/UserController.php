@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Api;
 use App\Http\Controllers\Controller;
 use App\Http\Resources\CourseResource;
+use Illuminate\Support\Facades\Hash;
 
 use App\Models\User;
 
@@ -32,7 +33,9 @@ class UserController extends Controller
              'email'=>$request->email,
              'direccion'=>$request->direccion,
              'contacto'=>$request->contacto,
-             'cedula'=>$request->cedula
+             'cedula'=>$request->cedula,
+             'password'=>bcrypt($request->password)
+
         ];
         $user->update($data);
 
@@ -44,7 +47,9 @@ class UserController extends Controller
              'email'=>$request->email,
              'direccion'=>$request->direccion,
              'contacto'=>$request->contacto,
-             'cedula'=>$request->cedula
+             'cedula'=>$request->cedula,
+             'password'=>bcrypt($request->password)
+
         ];
         User::create($data);
         //return response()->json($data, 201);

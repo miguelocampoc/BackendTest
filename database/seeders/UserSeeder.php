@@ -22,12 +22,12 @@ class UserSeeder extends Seeder
         ]);
         */
         User::create([
-            'name' => 'Miguel Angel',
-            'apellidos' => 'Ocampo Chavarro',
-            'email' =>'miguelocampoc@gmail.com',
+            'name' => 'Miguel',
+            'apellidos' => 'Ocampo',
+            'email' =>'miguel@test.com',
             'cedula' => '123456789',
-            'contacto' => '3172132023',
-            'direccion' => 'CALLE 31',
+            'contacto' => '123456789',
+            'direccion' => 'CALLE 13',
             'password' => bcrypt('12345678')
         ]);
         User::create([
@@ -55,6 +55,15 @@ class UserSeeder extends Seeder
             'cedula' => '123456789',
             'contacto' => '123456789',
             'direccion' => 'CALLE 12',
+            'password' => bcrypt('12345678')
+        ]);
+        User::create([
+            'name' => 'Usuario ',
+            'apellidos' => 'Prueba',
+            'email' => 'userprueba@test.com',
+            'cedula' => '123456789',
+            'contacto' => '123456789',
+            'direccion' => 'prueba',
             'password' => bcrypt('12345678')
         ]);
     }

@@ -6,6 +6,8 @@ use App\Http\Controllers\Api\CourseController;
 use App\Http\Controllers\Api\UserController;
 use App\Http\Controllers\Api\librosController;
 use App\Http\Controllers\Api\PrestamoController;
+use App\Http\Controllers\Api\RerservarController;
+use App\Http\Controllers\LoginController;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
@@ -32,12 +34,20 @@ Route::post('prestamo/update', [PrestamoController::class, 'update']);
 Route::get('prestamos', [PrestamoController::class, 'index']);
 
 
+Route::get('reservar/{id}', [RerservarController::class, 'list']);
+Route::post('reservar/delete', [RerservarController::class, 'delete']);
+
+
+
+
+
 Route::post('libro/store', [librosController::class, 'store']);
 Route::post('libro/delete', [librosController::class, 'delete']);
 Route::post('libro/edit', [librosController::class, 'edit']);
 Route::post('libro/update', [librosController::class, 'update']);
 Route::get('libros', [librosController::class, 'index']);
 
+Route::post('autenticacion', [LoginController::class, 'login']);
 
 
 Route::post('usuario/store', [UserController::class, 'store']);
