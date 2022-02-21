@@ -9,4 +9,5 @@ Entrar a la ruta del proyecto en la consola de comandos y ejecutar los siguiente
 Una vez finalizado los pasos anteriores, el servidor ya deberia esta funcionando  
 
 Nota: Es necesario tener composer instalado
+
 Nota: La base datos esta incluida en el proyecto con nombre sistemtest
