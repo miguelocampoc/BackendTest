@@ -6,6 +6,7 @@ Entrar a la ruta del proyecto en la consola de comandos y ejecutar los siguiente
 3.   php artisan db:seed
 4.   php artisan serve 
 
-Nota: Es necesario tener composer instalado
+Una vez finalizado los pasos anteriores, el servidor ya deberia esta funcionando  
 
-Una vez finalizado los pasos anteriores, el servidor ya deberia esta funcionando 
+Nota: Es necesario tener composer instalado
+Nota: La base datos esta incluida en el proyecto con nombre sistemtest
